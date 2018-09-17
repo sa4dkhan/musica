@@ -3,5 +3,5 @@ from music import views
 
 app_name = 'music'
 urlpatterns = [
-    path('', views.home, name='home')
+    path('create_album', views.create_album, name='create_album')
 ]
