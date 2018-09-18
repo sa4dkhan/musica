@@ -31,25 +31,12 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navb">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-          <a class="nav-link" href="{% url 'music:index' %}"><i class="fas fa-compact-disc" style = "color : white;"></i></span>&nbsp; Albums</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="{% url 'music:songs' 'all' %}"><span class="fa fa-music" style = "color : white;"></span></span>&nbsp; Songs</a>
-      </li>
-      <form class="form-inline" action="/action_page.php">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-success" type="submit">Search</button>
-      </form>
-
-    </ul>
-    <ul class="navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'music:create_album' %}"><i class="fa fa-plus" style = "color : white;"></i></span>&nbsp; Add Album</a>
+          <a class="nav-link" href="{% url 'music:register' %}"><i class="fas fa-user-plus" style = "color : white;"></i></span>&nbsp; Register</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="{% url 'music:logout_user' %}"><span class="fa fa-sign-out-alt" style = "color : white;"></span></span> Logout</a>
+          <a class="nav-link" href="{% url 'music:login_user' %}"><span class="fas fa-sign-in-alt" style = "color : white;"></span></span> Login</a>
       </li>
     </ul>
   </div>
